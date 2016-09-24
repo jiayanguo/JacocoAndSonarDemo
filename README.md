@@ -21,29 +21,5 @@ If the build below fails because the code does not match Sonar minimum criteria,
 
 Setting you sonar server:
 
- step 1: Please add the sections below to your ~/.m2/settings.xml right below servers section:
+ step 1: Please add content of setting.xml file to to your ~/.m2/settings.xml right below servers section:
  
- ~~<servers>
-     <server>
-         <id>[id]</id>
-         <username>[host_username]</username>
-         <password>[host_password]</password>
-     </server>
- </servers>
-  
- <!-- Please add below for Sonar -->
- <pluginGroups>
-     <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
- </pluginGroups>  ~~
- 
- Step 2: Also add the section below in profiles section:
- ~~<profile>
-     <id>sonar</id>
-     <activation>
-         <activeByDefault>true</activeByDefault>
-     </activation>
-     <properties>
-         <!-- Optional URL to server. Default value is http://localhost:9000 -->
-         <sonar.host.url>http://[host] </sonar.host.url>
-     </properties>
- </profile>~~
