@@ -23,7 +23,7 @@ Setting you sonar server:
 
  step 1: Please add the sections below to your ~/.m2/settings.xml right below servers section:
  
- <servers>
+ ~~<servers>
      <server>
          <id>[id]</id>
          <username>[host_username]</username>
@@ -34,10 +34,10 @@ Setting you sonar server:
  <!-- Please add below for Sonar -->
  <pluginGroups>
      <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
- </pluginGroups>  
+ </pluginGroups>  ~~
  
  Step 2: Also add the section below in profiles section:
- <profile>
+ ~~<profile>
      <id>sonar</id>
      <activation>
          <activeByDefault>true</activeByDefault>
@@ -46,4 +46,4 @@ Setting you sonar server:
          <!-- Optional URL to server. Default value is http://localhost:9000 -->
          <sonar.host.url>http://[host] </sonar.host.url>
      </properties>
- </profile>
+ </profile>~~
