@@ -18,7 +18,7 @@
 
     mvn clean verify sonar:sonar
 
-Find your report from: 
+**Find your report from:** 
 
     http://localhost:9000/
 
