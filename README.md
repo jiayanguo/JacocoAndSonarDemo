@@ -18,7 +18,9 @@
 
     mvn clean verify sonar:sonar
 
-Find your report from: http://localhost:9000/
+Find your report from: 
+
+    http://localhost:9000/
 
 **If the build below fails because the code does not match Sonar minimum criteria, then use:**
 
