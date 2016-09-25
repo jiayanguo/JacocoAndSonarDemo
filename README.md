@@ -30,7 +30,7 @@
 
 **Setting you sonar server:**
 
-    Please add content of setting.xml file to to your ~/.m2/settings.xml right below servers section.
+    Please add below to to your ~/.m2/settings.xml right below servers section.
     <servers>
         <server>
             <id>[id]</id>
