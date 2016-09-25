@@ -1,20 +1,27 @@
 **_`How to run Jacoco (from command line)`_**
+
     mvn clean verify (find your report under ./target/site)
 
 
 
 **Sonar:**
+
     Download sonar server from here: http://www.sonarqube.org/downloads/
+    
     Start sonar server (reference: http://docs.sonarqube.org/display/SONAR/Get+Started+in+Two+Minutes)
+    
     run sonar server
+    
         ./sonar.sh console
 
 **_How to run Jacoco and Sonar (from command line)_**
+
     mvn clean verify sonar:sonar
 
 Find your report from: http://localhost:9000/
 
 **If the build below fails because the code does not match Sonar minimum criteria, then use:**
+
     mvn clean verify sonar:sonar -Dsonar.buildbreaker.skip=true
 
 
