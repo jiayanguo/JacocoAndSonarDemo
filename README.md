@@ -30,5 +30,5 @@ Find your report from:
 
 **Setting you sonar server:**
 
-  Please add content of setting.xml file to to your ~/.m2/settings.xml right below servers section:
+    Please add content of setting.xml file to to your ~/.m2/settings.xml right below servers section.
  
